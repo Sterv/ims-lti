@@ -60,7 +60,7 @@ function _encodeParam(key, val) {
 
 class HMAC_SHA1 {
   constructor(options) {
-    this.trustProxy = (options && options.trustProxy) || false;
+    this.trustProxy = true; //(options && options.trustProxy) || false;
   }
 
   toString() {

@@ -80,6 +80,9 @@ class HMAC_SHA1 {
       utils.special_encode(req_url),
       _clean_request_body(params, parsed_url.query)
     ];
+ 
+    console.log(req_url);
+    console.log(_clean_request_body(params, parsed_url.query));
 
     return this.sign_string(sig.join('&'), consumer_secret, token);
   }

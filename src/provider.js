@@ -140,6 +140,8 @@ class Provider {
     );
     const valid_signature = generated === body.oauth_signature;
 
+    console.log(generated, body.oauth_signature);
+    
     if (!valid_signature) {
       return callback(new errors.SignatureError('Invalid Signature'), false);
     }

@@ -128,6 +128,11 @@ class HMAC_SHA1 {
     const parsedUrl = url.parse(originalUrl, true);
     const hitUrl = protocol + '://' + host + parsedUrl.pathname;
 
+    console.log(hitUrl)
+    console.log(parsedUrl)
+    console.log(req.method)
+    console.log(token)
+
     return this.build_signature_raw(
       hitUrl,
       parsedUrl,

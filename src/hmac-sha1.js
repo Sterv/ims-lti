@@ -77,7 +77,7 @@ class HMAC_SHA1 {
   ) {
     const sig = [
       method.toUpperCase(),
-      utils.special_encode(req_url),
+      utils.special_encode(req_url + '/ltiLogin'),
       _clean_request_body(params, parsed_url.query)
     ];
  

@@ -132,6 +132,8 @@ class HMAC_SHA1 {
     console.log(parsedUrl)
     console.log(req.method)
     console.log(token)
+    console.log(host)
+    console.log(parsedUrl.pathname)
 
     return this.build_signature_raw(
       hitUrl,
